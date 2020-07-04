@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,209 @@
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/gijgo.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="./images/logo.png" alt="" width="350px">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Trang chủ</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Danh Mục</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Danh mục 1</a>
+                            <a class="dropdown-item" href="#">Danh mục 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Thương Hiệu</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Thương Hiệu 1</a>
+                            <a class="dropdown-item" href="#">Thương Hiệu 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 row">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <div style="float: right;">
+                        <a class="btn btn-sm btn-outline-success ml-5" href="#signupModal" role="button"
+                            data-toggle="modal" data-target="#login">
+                            <i class="fa fa-user-circle mr-1"></i>
+                            Đăng Nhập
+                        </a>
+                        <a class="btn btn-sm btn-outline-success ml-2 mr-2" href="#signupModal" role="button"
+                            data-toggle="modal" data-target="#signup">
+                            <i class="fa fa-user-circle mr-1"></i>
+                            Đăng kí
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" style="margin-top: 200px;" id="login" tabindex="-1" role="dialog"
+                            aria-labelledby="modelTitleId" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <h4 class="card-title mb-4 mt-1">Đăng Nhập</h4>
+                                            <p>
+                                                <a href="" class="btn btn-block btn-outline-info">
+                                                    <i class="fa fa-twitter" aria-hidden="true"></i> &nbsp; Login
+                                                    via
+                                                    Twitter
+                                                </a>
+                                                <a href="" class="btn btn-block btn-outline-primary">
+                                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;
+                                                    Login
+                                                    via facebook
+                                                </a>
+                                            </p>
+                                            <hr>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="row mx-auto">
+                                                        <div class="form-group ml-2">
+                                                            <input name="" class="form-control"
+                                                                placeholder="Email or login" type="email">
+                                                        </div>
+                                                        <div class="form-group ml-2">
+                                                            <input class="form-control" placeholder="******"
+                                                                type="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mx-auto mt-4">
+                                                        <button type="submit"
+                                                            class="btn btn-primary btn-block">Login</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row float-right">
+                                                    <a class="small" href="#">Forgot password?</a>
+                                                </div>
+
+                                            </form>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Đóng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <!-- Modal -->
+                        <div class="modal fade" style="margin-top: 200px;" id="signup" tabindex="-1" role="dialog"
+                            aria-labelledby="modelTitleId" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- <h5 class="modal-title">Đăng kí</h5> -->
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <h4 class="card-title mb-4 mt-1">Đăng kí</h4>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="row mx-auto">
+                                                        <div class="form-group ml-2">
+                                                            <input name="name" class="form-control" placeholder="Tên"
+                                                                type="text">
+                                                        </div>
+                                                        <div class="form-group ml-2">
+                                                            <input name="lastName" class="form-control" placeholder="Họ"
+                                                                type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="row mx-auto">
+                                                        <div class="form-group ml-2">
+                                                            <input name="" class="form-control" placeholder="Email"
+                                                                type="email">
+                                                        </div>
+                                                        <div class="form-group ml-2">
+                                                            <input class="form-control" placeholder="******"
+                                                                type="password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mx-auto mt-4">
+                                                        <button type="submit"
+                                                            class="btn btn-primary btn-block">SignUp</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </nav>
+    </header>
+    <div class="bodyComplete mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-3">Cảm ơn bạn đã đặt hàng</h1>
+            <p class="lead"><strong>Vui lòng kiểm tra email của bạn</strong> để xác thực đơn hàng.</p>
+            <hr>
+            <p class="lead">
+              <a href="index.html" class="btn btn-outline-success " role="button">Tiếp tục mua hàng</a>
+            </p>
+          </div>
+    </div>
+    <footer class="page-footer font-small blue mt-5">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            nhutphan25082000@gmail.com
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </div>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/gijgo.min.js"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+
+    <script>
+        $('#exampleModal').on('show.bs.modal', event => {
+            var button = $(event.relatedTarget);
+            var modal = $(this);
+        });
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+    </script>
 </body>
+
 </html>
