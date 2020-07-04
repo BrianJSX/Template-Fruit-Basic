@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/gijgo.min.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    
+    <link rel="stylesheet" href="./css/flickity.min.css">
 </head>
 
 <body>
@@ -195,6 +192,51 @@
                     <div class="row m-3">
                         <img src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%">
                     </div>
+                    <div class="card row mt-3">
+                        <div class="card-header">
+                            SẢN PHẨM LIÊN QUAN
+                        </div>
+                        <div class="card-body">
+                            <div class="carousel" data-flickity='{ "groupCells": true }'>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                                <div class="carousel-cell">
+                                    <a href="productDetail.html"> 
+                                        <img class="imageRelate" src="/images/Traicay/dautay.jpg" class="zoom" alt="" width="100%"
+                                            height="100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 container">
                     <div class="headerProd">
@@ -288,6 +330,8 @@
         <script src="./js/popper.min.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/gijgo.min.js"></script>
+        <script src="./js/flickity.pkgd.min.js"></script>
+
         <script>
             $('#exampleModal').on('show.bs.modal', event => {
                 var button = $(event.relatedTarget);
@@ -296,6 +340,7 @@
             $('#datepicker').datepicker({
                 uiLibrary: 'bootstrap4'
             });
+
         </script>
 </body>
 
